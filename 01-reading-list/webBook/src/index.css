@@ -7,3 +7,26 @@
     color: CanvasText;
     color-scheme: dark light;
 }
+
+.listOfFav {
+    --sb-track-color: #edebeb00;
+    --sb-thumb-color: #ffffff00;
+    --sb-size: 5px;
+
+    scrollbar-color: var(--sb-thumb-color) 
+                     var(--sb-track-color);
+}
+
+.listOfFav::-webkit-scrollbar {
+    width: var(--sb-size)
+}
+
+.listOfFav::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 5px;
+}
+
+.listOfFav::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 5px;
+}
